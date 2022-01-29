@@ -1,0 +1,111 @@
+@import 'config';
+@import 'header';
+@import 'main';
+@import 'footer';
+
+body {
+    text-align: center;
+    font-family: $Red-Hat-Display;
+    background-color: #F2F2F2;
+}
+
+h1, h2 {
+    color: map-get($colors, -black);
+}
+
+p, div.number {
+    color: map-get($colors, -gray);
+}
+
+h1, h2, div.number, p.overline, a {
+    font-weight: map-get($font-weights, -black);
+}
+
+p, a, div.number {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+p.overline {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: map-get($colors, -blue);
+}
+
+ul {
+    list-style-type: none;    
+
+    li {
+        padding: 16px 0;
+    }
+}
+
+.buttons {
+    border-radius: 29px; 
+    transition: all 0.3s ease;   
+}
+
+.download-btn {
+    padding: 16px 40px;
+}
+
+.whatIsIt-btn {
+    padding: 16px 29px;
+}
+
+span {
+    margin-left: 4px;
+}
+
+a {
+    color: map-get($colors, -white);
+    text-decoration: none;
+}
+
+.purple-btn {
+    background-color: map-get($colors, -purple);
+
+    & span {
+        color: map-get($colors, -light-purple)
+    }
+
+    &:hover {
+        background-color: map-get($colors, hover-purple);
+    }
+}
+
+.blue-btn {
+    background-color: map-get($colors, -blue);
+
+    & span {
+        color: map-get($colors, -light-blue)
+    }
+
+    &:hover {
+        background-color: map-get($colors, hover-blue);
+    }
+}
+
+.number {
+    position: relative;
+    border: solid 1px rgba(135, 135, 157, 0.25);
+    top: 28px;
+    background: map-get($colors, -white);
+    width: 56px;
+    height: 56px;
+    border-radius: 29px;
+    padding: 15px 0;
+    margin: 120px auto 0;
+    z-index: 1;
+
+    &::before {
+        position: absolute;
+        content: "";
+        border-left: solid 1px rgba(135, 135, 157, 0.25);
+        height: 84px;
+        top: -84px;
+        left: 28px;
+    }
+}
+
+@import 'responsive';

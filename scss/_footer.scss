@@ -1,0 +1,15 @@
+footer {
+    position:relative;
+    background: url(../assets/mobile/image-footer.jpg) center top no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(77, 150, 168, 0.7);
+    padding: 92px 24px 72px;   
+
+    h2, p {
+        color: map-get($colors , -white);
+    }
+
+    p {
+        margin: 24px 0 48px;
+    }
+}

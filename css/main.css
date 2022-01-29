@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header img {
+  margin: 48px 0 54px;
+}
+
+header section {
+  margin: 0 24px;
+  position: relative;
+}
+
+header section h1 {
+  font-size: 40px;
+  line-height: 44px;
+  margin-top: 201px;
+}
+
+header section p {
+  margin: 24px 0 32px;
+}
+
+header section ul li {
+  margin: 8px 0;
+}
+
+header section::before {
+  position: absolute;
+  width: 100vw;
+  height: 153px;
+  top: -205px;
+  left: -24px;
+  content: "";
+  background: url(../assets/tablet/image-hero.png) center no-repeat;
+  background-size: 414px 153px;
+}
+
+main {
+  margin: 0 24px;
+}
+
+main .images {
+  margin: 64px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+  -ms-grid-columns: auto auto;
+      grid-template: 1fr 1fr / auto auto;
+  gap: 24px 25px;
+}
+
+main .images img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+main section h2 {
+  margin: 24px 0 32px;
+}
+
+footer {
+  position: relative;
+  background: url(../assets/mobile/image-footer.jpg) center top no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(77, 150, 168, 0.7);
+          box-shadow: inset 0 0 0 1000px rgba(77, 150, 168, 0.7);
+  padding: 92px 24px 72px;
+}
+
+footer h2, footer p {
+  color: #FAFAFA;
+}
+
+footer p {
+  margin: 24px 0 48px;
+}
+
+body {
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #F2F2F2;
+}
+
+h1, h2 {
+  color: #28283D;
+}
+
+p, div.number {
+  color: #87879D;
+}
+
+h1, h2, div.number, p.overline, a {
+  font-weight: 900;
+}
+
+p, a, div.number {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+p.overline {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #4D96A9;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding: 16px 0;
+}
+
+.buttons {
+  border-radius: 29px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.download-btn {
+  padding: 16px 40px;
+}
+
+.whatIsIt-btn {
+  padding: 16px 29px;
+}
+
+span {
+  margin-left: 4px;
+}
+
+a {
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.purple-btn {
+  background-color: #855FB1;
+}
+
+.purple-btn span {
+  color: #D9B8FF;
+}
+
+.purple-btn:hover {
+  background-color: #B18BDD;
+}
+
+.blue-btn {
+  background-color: #4D96A9;
+}
+
+.blue-btn span {
+  color: #8FE3F9;
+}
+
+.blue-btn:hover {
+  background-color: #71C0D4;
+}
+
+.number {
+  position: relative;
+  border: solid 1px rgba(135, 135, 157, 0.25);
+  top: 28px;
+  background: #FAFAFA;
+  width: 56px;
+  height: 56px;
+  border-radius: 29px;
+  padding: 15px 0;
+  margin: 120px auto 0;
+  z-index: 1;
+}
+
+.number::before {
+  position: absolute;
+  content: "";
+  border-left: solid 1px rgba(135, 135, 157, 0.25);
+  height: 84px;
+  top: -84px;
+  left: 28px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,22 @@
+main {
+    margin: 0 24px;
+
+    .images {
+        margin: 64px 0;
+        display: grid;
+        grid-template: 1fr 1fr / auto auto;
+        gap: 24px 25px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    }
+
+    section {
+        h2 {
+            margin: 24px 0 32px;
+        }
+    }
+}

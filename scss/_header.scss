@@ -1,0 +1,36 @@
+header {
+    img {
+        margin: 48px 0 54px;
+    }
+    
+    section {
+        margin: 0 24px;
+        position: relative;
+
+        h1 {
+            font-size: 40px;
+            line-height: 44px;
+            margin-top: 201px;
+        }
+
+        p {
+            margin: 24px 0 32px;
+        }
+
+        ul li {
+            margin: 8px 0;
+        }
+
+        &::before {
+            position: absolute;
+            width: 100vw;
+            height: 153px;
+            top: -205px;
+            left: -24px;
+            content: "";
+            background: url(../assets/tablet/image-hero.png) center no-repeat;
+            background-size: 414px 153px;
+
+        }
+    }
+}
