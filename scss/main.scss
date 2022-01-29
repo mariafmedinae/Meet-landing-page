@@ -3,15 +3,12 @@
 @import 'main';
 @import 'footer';
 
-html {
-    overflow-x: hidden;
-    width: 100vw;
-}
-
 body {
     text-align: center;
     font-family: $Red-Hat-Display;
-    background-color: #F2F2F2;    
+    background: map-get($colors, -white); 
+    overflow-x: hidden;
+    width: 100vw;  
 }
 
 h1, h2 {
