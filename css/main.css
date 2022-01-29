@@ -84,6 +84,11 @@ footer p {
   margin: 24px 0 48px;
 }
 
+html {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 body {
   text-align: center;
   font-family: "Red Hat Display", sans-serif;
