@@ -1,4 +1,81 @@
 @include tablet {
+    .number {
+        margin: 164px auto 0;
+    }
+
+    h2 {
+        width: 445px;
+        font-size: 40px;
+        line-height: 44px;
+        margin: 0 auto;
+    }
+    
+    header {
+        img {
+            margin: 48px 0 64px;
+        }
+        
+        section {
+            margin: 0 155px;
+    
+            h1 {                
+                margin-top: 375px;
+            }
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                width: 348px;
+                margin: 0 auto;
+            }
+    
+            ul li {
+                margin: 0;
+            }
+    
+            &::before {
+                height: 303px;
+                top: -375px;
+                left: -155px;
+                background-size: 820px 303px;
+    
+            }
+        }
+    }    
+
+    main {
+        margin: 0 40px;
+    
+        .images {
+            margin: 95px 0 48px;
+            grid-template: 1fr / auto auto auto auto;
+            gap: 11px;
+        }
+    
+        section {
+            margin: 0 57px;
+
+            h2 {
+                margin: 16px auto 32px;
+            }
+        }
+    }
+
+    footer {
+        background: url(../assets/tablet/image-footer.jpg) center top no-repeat;
+        background-size: cover;
+        padding: 92px 98px 72px;   
+    
+        h2, p {
+            color: map-get($colors , -white);
+        }
+    
+        p {
+            margin: 32px 0 40px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
 }
 
 @include desktop {
