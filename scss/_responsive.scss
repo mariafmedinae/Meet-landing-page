@@ -1,6 +1,6 @@
 @include tablet {
     .number {
-        margin: 164px auto 0;
+        margin-top: 164px;
     }
 
     h2 {
@@ -79,4 +79,90 @@
 }
 
 @include desktop {
+    .one {
+        margin-top: 196px;
+    }
+
+    .two {
+        margin-top: 156px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+    
+    header {
+        img {
+            margin: 80px 0 61px;
+        }
+        
+        section {
+            width: 540px;
+            margin: 0 auto;
+    
+            h1 {
+                font-size: 64px;
+                line-height: 64px;
+                margin-top: 47px;
+            }
+    
+            p {
+                margin-top: 34px;
+            }
+    
+            &::before {
+                width: 394px;
+                height: 303px;
+                top: -47px;
+                left: -482px;
+                background: url(../assets/desktop/image-hero-left.png) no-repeat;
+                background-size: 100%;
+    
+            }
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 394px;
+                height: 303px;
+                top: 0;
+                left: 628px;
+                background: url(../assets/desktop/image-hero-right.png) no-repeat;
+                background-size: 100%;
+    
+            }
+        }
+    }
+
+    main {
+        margin: 0 165px;
+    
+        .images {
+            margin: 90px 0 80px;
+            gap: 30px;
+        }
+
+        p {
+            width: 540px;
+            margin: 0 auto;
+        }
+    }
+
+    footer {
+        background: url(../assets/desktop/image-footer.jpg) center top no-repeat;
+        background-size: cover;
+        padding: 116px 165px 104px; 
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2, p {
+            width: 350px;
+        }
+
+        h2 {
+            margin: 0 33px 0 0;
+        }
+    }
 }

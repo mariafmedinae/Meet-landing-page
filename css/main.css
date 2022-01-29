@@ -192,7 +192,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .number {
-    margin: 164px auto 0;
+    margin-top: 164px;
   }
   h2 {
     width: 445px;
@@ -256,6 +256,83 @@ a {
     margin: 32px 0 40px;
     font-size: 18px;
     line-height: 26px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .one {
+    margin-top: 196px;
+  }
+  .two {
+    margin-top: 156px;
+  }
+  p {
+    font-size: 18px;
+  }
+  header img {
+    margin: 80px 0 61px;
+  }
+  header section {
+    width: 540px;
+    margin: 0 auto;
+  }
+  header section h1 {
+    font-size: 64px;
+    line-height: 64px;
+    margin-top: 47px;
+  }
+  header section p {
+    margin-top: 34px;
+  }
+  header section::before {
+    width: 394px;
+    height: 303px;
+    top: -47px;
+    left: -482px;
+    background: url(../assets/desktop/image-hero-left.png) no-repeat;
+    background-size: 100%;
+  }
+  header section::after {
+    position: absolute;
+    content: "";
+    width: 394px;
+    height: 303px;
+    top: 0;
+    left: 628px;
+    background: url(../assets/desktop/image-hero-right.png) no-repeat;
+    background-size: 100%;
+  }
+  main {
+    margin: 0 165px;
+  }
+  main .images {
+    margin: 90px 0 80px;
+    gap: 30px;
+  }
+  main p {
+    width: 540px;
+    margin: 0 auto;
+  }
+  footer {
+    background: url(../assets/desktop/image-footer.jpg) center top no-repeat;
+    background-size: cover;
+    padding: 116px 165px 104px;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer h2, footer p {
+    width: 350px;
+  }
+  footer h2 {
+    margin: 0 33px 0 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
